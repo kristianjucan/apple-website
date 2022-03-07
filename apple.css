@@ -1,0 +1,247 @@
+/* Cred ca e de la sine inteles tot ce este aici, am folosit flexbox in cea mai mare parte :) */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.img-fluid {
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+#navbarNav {
+  padding-bottom: 20px;
+}
+
+.logo {
+  width: 1rem;
+  vertical-align: top;
+}
+
+.navbar-item {
+  text-decoration: none;
+}
+
+.navbar li {
+  font-size: 13px;
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+.navbar.logo {
+  align-self: center;
+}
+
+li a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: -10px;
+}
+
+.i13p {
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+.sup {
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+.more {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.secondText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #36283c;
+  color: white;
+  padding-top: 50px;
+  margin-bottom: -10px;
+}
+.i13 {
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+.nts {
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+.more {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.produse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.ipad {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 600px;
+  background-image: url(/imagini/promo_ipad_mini__spq4zjcuuaie_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  text-align: center;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.ipadLogo img {
+  width: 400px;
+  height: 70px;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 50px;
+}
+
+.ipad h3 {
+  font-size: 20px;
+}
+
+.imac {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 600px;
+  background-image: url(/imagini/promo_imac__crg641tip4q6_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  text-align: center;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+.imacLogo {
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.imac h3 {
+  font-size: 20px;
+}
+
+.produse2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.airtag {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 600px;
+  background-image: url(/imagini/promo_airtag__e6b73a64nno2_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  text-align: center;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.airtagLogo {
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.airtag h3 {
+  font-size: 20px;
+}
+.airpodsMax {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 600px;
+  background-image: url(/imagini/tile_airpods_max_alt__pjktfze9yiq2_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  text-align: center;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.airpodsLogo {
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.airpodsMax h3 {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .produse,
+  .produse2 {
+    flex-direction: column;
+  }
+  .ipad,
+  .imac,
+  .airtag,
+  .airpodsMax {
+    width: 100%;
+  }
+}
